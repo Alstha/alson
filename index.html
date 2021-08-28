@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon" />
+    <title>Alstha.Confirm</title>
+    <style>
+        
+      #ino {
+        font-size: 25px;
+        width: 222px;
+        border: 12px red double;
+        background-color: rgb(206, 206, 206);
+        color: rgb(75, 74, 74);
+        font-style: italic;
+        text-align: center;
+        animation: int 2s 0.5s infinite;
+      }
+      .rad {
+        font-size: 25px;
+        cursor: pointer;
+        border-radius: 20%;
+        margin-left: 12px;
+        color: aliceblue;
+        background-color: rgb(49, 49, 49);
+      }
+      @keyframes int {
+        0% {
+          border-color: red;
+        }
+        50% {
+          border-color: rgb(206, 197, 69);
+        }
+        100% {
+          border-color: rgb(25, 0, 255);
+        }
+      }
+      @media (max-width: 500px) and (min-width: 1px) {
+        .hh1 {
+          display: none;
+        }
+        .cur {
+          position: absolute;
+          top: 283px;
+          left: 144px;
+        }
+        .cur2 {
+          position: absolute;
+          top: 603px;
+          left: 104px;
+        }
+      }
+      @media (min-width: 500px) {
+        .hh2 {
+          display: none;
+        }
+      }
+      #com:hover {
+        margin-left: 20px;
+        background-color: rgba(229, 240, 130, 0.897);
+        border-radius: 20%;
+      }
+      #mob {
+        margin-left: 105px;
+      }
+      #mob:hover {
+        background-color: rgba(218, 235, 119, 0.815);
+        border-radius: 20%;
+      }
+      #cur {
+        position: absolute;
+        top: 354px;
+        left: 450px;
+      }
+      #cur2 {
+        position: absolute;
+        top: 300px;
+        left: 120px;
+      }
+      #load{
+        width:100%;
+        height: 100%;
+        
+        background-color: rgb(235, 235, 235);
+        position: absolute;
+        z-index: 222;
+        background-image: url(https://gifimage.net/wp-content/uploads/2017/02/Loading-GIF-Image-31.gif);
+        
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body onload="myfuc()"
+    style="
+      background-image: url(img/bgi.jpg);
+      background-repeat: 1;
+      background-size: cover;
+    "
+  >
+  <div id="load">
+      
+  </div>
+    <div class="hh1">
+      <marquee
+        behavior="scroll"
+        direction="right"
+        width="500px"
+        style="
+          font: 25px white;
+          font-style: italic;
+          background-color: rgb(21, 100, 21);
+          color: white;
+          margin: auto;
+          display: block;
+        "
+      >
+        SJS by ALSTHA
+      </marquee>
+      <input
+        id="ino"
+        style="margin: 2%"
+        placeholder="Enter your name"
+        type=" text"
+        required
+      /><br />
+      <label class="rad" for="rad1"
+        ><input id="rad1" type="radio" name="r" />Student
+      </label>
+      <label class="rad" for="rad2"
+        ><input id="rad2" type="radio" name="r" />Teacher
+      </label>
+      <label class="rad" for="rad3"
+        ><input id="rad3" type="radio" name="r" />Visitor
+      </label>
+      <h2 style="color: bisque; margin-left: 30px">Your Device type:</h2>
+      <a href="sjs-alsonomg.html"
+        ><img id="com" src="img/lap_com-removebg-preview.png" alt=""
+      /></a>
+      <a href="http://sjsalson.epizy.com"
+        ><img id="mob" src="img/mobile-removebg-preview.png" alt=""
+      /></a>
+      <a href="http://sjsalson.epizy.com"
+        ><img id="cur" width="50px" src="img/cur-removebg-preview.png" alt=""
+      /></a>
+      <a href="sjs-alsonomg.html"
+        ><img id="cur2" width="50px" src="img/cur-removebg-preview.png" alt=""
+      /></a>
+      <img
+        style="border-radius: 50%; margin-left: 5%"
+        width="50px"
+        src="img/me.jpg"
+        alt=""
+      />
+    </div>
+    <div class="hh2">
+      <marquee
+        behavior="scroll"
+        direction="right"
+        width="500px"
+        style="
+          font: 25px white;
+          font-style: italic;
+          background-color: rgb(21, 100, 21);
+          color: white;
+          margin: auto;
+          display: block;
+        "
+      >
+        SJS by ALSTHA
+      </marquee>
+      <input
+        id="ino"
+        style="margin: 8%"
+        placeholder="Enter your name"
+        type=" text"
+        required
+      /><br />
+      <input type="radio" name="r" />Student <br />
+      <input type="radio" name="r" />Teacher <br /><input
+        type="radio"
+        name="r"
+      />Visitor
+      <h2 style="color: rgb(133, 255, 139); margin-left: 30px">
+        Your Device type:
+      </h2>
+      <a href="sjs-alsonomg.html"
+        ><img class="com" src="img/lap_com-removebg-preview.png" alt="" /></a
+      ><br /><br /><br />
+      <a href="http://sjsalson.epizy.com"
+        ><img
+          class="mob"
+          width="155px"
+          src="img/mobile-removebg-preview.png"
+          alt=""
+      /></a>
+      <img
+        style="border-radius: 50%; margin-left: 5%"
+        width="50px"
+        src="img/me.jpg"
+        alt=""
+      />
+      <a href="sjs-alsonomg.html"
+        ><img
+          class="cur"
+          width="50px"
+          src="img/cur-removebg-preview.png"
+          alt=""
+      /></a>
+      <a href="http://sjsalson.epizy.com"
+        ><img
+          class="cur2"
+          width="50px"
+          src="img/cur-removebg-preview.png"
+          alt=""
+      /></a>
+    </div>
+    <h3 style="color: white">CLICK ANYONE OF THEM to Proceed Futher</h3>
+
+    <script>
+      var a=document.getElementById("load")
+      function myfuc(){
+        load.style.display="none"
+      }
+    </script>
+  </body>
+</html>
